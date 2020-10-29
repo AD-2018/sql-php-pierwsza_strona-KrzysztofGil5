@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 echo ("<h3>Zadanie 1</h3>");
 $sql = "SELECT * FROM pracownicy";
 
-$result = $mysqli_query( $sql );
+$result = $mysqli_query($conn,$sql);
 
 echo('<table border="1" class="tabela"');
 echo ("<tr><th>ID</th><th>Imię</th><th>Dział</th><th>Zarobki</th><th>Nazwa działu</tr>");
