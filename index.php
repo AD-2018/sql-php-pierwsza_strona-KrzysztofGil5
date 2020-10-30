@@ -1,16 +1,13 @@
 <?php
-$servername ="sql7.freemysqlhosting.net";
-$username = "sql7373404";
-$password = "b1DIlA93DR";
-$dbname = "sql7373404";
-echo("Witaj świecie nazywam się Krzysztof Gil");
-$conn = new mysqli($servername, $username, $password, $dbname);
+require = "connect.php";
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $sql = "SELECT * FROM pracownicy";
 
 $result = mysqli_query($conn,$sql);
+echo("Witaj świecie nazywam się Krzysztof Gil");
 
 echo("<table border=1>");
 echo("<tr><td>ID</td><td>Imię</td><td>Dział</td><td>Zarobki</td><td>Data Urodzenia</td></tr>");
