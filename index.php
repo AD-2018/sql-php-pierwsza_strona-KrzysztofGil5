@@ -4,10 +4,10 @@ $username = "sql7373404";
 $password = "b1DIlA93DR";
 $dbname = "sql7373404";
 echo("Witaj świecie nazywam się Krzysztof Gil");
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-echo("<h1>Zadanie1</h1>");
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 $sql = "SELECT * FROM pracownicy";
 
 $result = mysqli_query($conn,$sql);
