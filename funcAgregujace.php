@@ -4,7 +4,7 @@
 </head>
 <body>
 <div class="nav">
-   <a href="index.html">orgPracownicy</a>
+   <a href="index.php">orgPracownicy</a>
    <a href="funcAgregujace.php">funcAgregujace</a>
 </div>
 <?php
