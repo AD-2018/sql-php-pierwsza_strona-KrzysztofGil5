@@ -28,12 +28,11 @@ while($row=mysqli_fetch_assoc($result)) {
 }
 echo ("</table>");
 
-echo("<br><h3>Tylko mężczyźni</h3>");
-$sql = "SELECT * FROM pracownicy WHERE imie NOT LIKE '%a'";
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
+echo("<br><h3>Tylko mężczyźni</h3>");
+
+$sql = "SELECT * FROM pracownicy WHERE imie NOT LIKE '%a'";
 
 $result = mysqli_query($conn, $sql);
 
@@ -46,12 +45,10 @@ while($row=mysqli_fetch_assoc($result)) {
 }
 echo ("</table>");
 
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 echo("<br><h3>Tylko kobiety</h3>");
 $sql = "SELECT * FROM pracownicy WHERE imie LIKE '%a'";
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
 
 $result = mysqli_query($conn, $sql);
 
