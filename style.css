@@ -6,5 +6,8 @@ table {
   width: 40%;
 }
 th {
-  height: 50px;
+  height: 35px;
+}
+td {
+height: 10px;
 }
