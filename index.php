@@ -27,5 +27,6 @@ while($row=mysqli_fetch_assoc($result)) {
     echo("</tr>");
 }
 echo ("</table>");
+?>
 </body>
 </html>
