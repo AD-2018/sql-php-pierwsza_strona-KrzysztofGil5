@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a>
 <?php
 $servername ="mysql-krzysztofgil5.alwaysdata.net";
 $username = "217145";
