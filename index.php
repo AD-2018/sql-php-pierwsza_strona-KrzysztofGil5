@@ -26,7 +26,7 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
  
-echo("Witaj świecie nazywam się Krzysztof Gil");
+echo("<br>Witaj świecie nazywam się Krzysztof Gil");
 
 
   
