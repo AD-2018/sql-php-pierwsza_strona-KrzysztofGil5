@@ -18,13 +18,7 @@ if ($conn->connect_error) {
 }
 
 $result = mysqli_query($conn, $sql);
-if ( $result) {
-      echo "<li>Ok";
-} 
-  else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
- 
+
 echo("<table border=1>");
 echo("<tr><td>ID</td><td>Imię</td><td>Dział</td><td>Zarobki</td><td>Data Urodzenia</td></tr>");
 while($row=mysqli_fetch_assoc($result)) {
@@ -40,15 +34,8 @@ $sql = "SELECT * FROM pracownicy WHERE imie NOT LIKE '%a'";
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  
-  
-  $result = mysqli_query($conn, $sql);
-  if ( $result) {
-        echo "<li>Ok";
-  } 
-    else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
+
+$result = mysqli_query($conn, $sql);
 
 echo("<table border=1>");
 echo("<tr><td>ID</td><td>Imię</td><td>Dział</td><td>Zarobki</td><td>Data Urodzenia</td></tr>");
@@ -65,15 +52,8 @@ $sql = "SELECT * FROM pracownicy WHERE imie LIKE '%a'";
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  
-  
-  $result = mysqli_query($conn, $sql);
-  if ( $result) {
-        echo "<li>Ok";
-  } 
-    else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
+ 
+$result = mysqli_query($conn, $sql);
 
 echo("<table border=1>");
 echo("<tr><td>ID</td><td>Imię</td><td>Dział</td><td>Zarobki</td><td>Data Urodzenia</td></tr>");
