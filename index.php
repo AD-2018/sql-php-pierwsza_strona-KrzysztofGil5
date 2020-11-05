@@ -52,7 +52,7 @@ $sql = "SELECT * FROM pracownicy WHERE imie LIKE '%a'";
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
- 
+
 $result = mysqli_query($conn, $sql);
 
 echo("<table border=1>");
