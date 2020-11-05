@@ -5,6 +5,10 @@
 </head>
 <body>
   <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
+  <div class="nav">
+    <a href="orgPacownicy.php">orgPracownicy</a>
+    <a href="funcAgregujace.php">funcAgregujace</a>
+</div>
 <?php
 require "connect.php";
 
