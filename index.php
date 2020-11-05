@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a>
+  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
 <?php
 $servername ="mysql-krzysztofgil5.alwaysdata.net";
 $username = "217145";
@@ -18,9 +18,18 @@ if ($conn->connect_error) {
 }
 $sql = "SELECT * FROM pracownicy";
 
-$result = mysqli_query($conn,$sql);
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+      echo "<li>ok";
+} 
+  else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+ 
 echo("Witaj świecie nazywam się Krzysztof Gil");
 
+
+  
 echo("<table border=1>");
 echo("<tr><td>ID</td><td>Imię</td><td>Dział</td><td>Zarobki</td><td>Data Urodzenia</td></tr>");
 while($row=mysqli_fetch_assoc($result)) {
