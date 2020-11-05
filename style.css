@@ -4,11 +4,14 @@ table, th, td {
 }
 table {
   border-collapse: collapse;
-  width: 40%;
+  width: 35%;
 }
 th {
+  background-color: #1E90FF;
   height: 35px;
 }
 td {
-height: 10px;
+height: 25px;
 }
+tr:hover {background-color: #ddd;}
+tr:nth-child(even){background-color: #f2f2f2;}
