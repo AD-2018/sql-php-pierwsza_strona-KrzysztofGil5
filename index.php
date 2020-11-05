@@ -18,6 +18,12 @@ if ($conn->connect_error) {
 }
 
 $result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 
 echo("<table border=1>");
 echo("<tr><th>ID</th><th>Imię</th><th>Nazwa Działu</th><th>Zarobki</th><th>Data Urodzenia</th></tr>");
@@ -35,6 +41,12 @@ echo("<br><h3>Tylko mężczyźni</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie NOT LIKE '%a'";
 
 $result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 
 echo("<table border=1>");
 echo("<tr><th>ID</th><th>Imię</th><th>Nazwa Działu</th><th>Zarobki</th><th>Data Urodzenia</th></tr>");
@@ -51,6 +63,12 @@ echo("<br><h3>Tylko kobiety</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie LIKE '%a'";
 
 $result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 
 echo("<table border=1>");
 echo("<tr><th>ID</th><th>Imię</th><th>Nazwa Działu</th><th>Zarobki</th><th>Data Urodzenia</th></tr>");
