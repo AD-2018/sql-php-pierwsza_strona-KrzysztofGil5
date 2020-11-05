@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
 $servername ="mysql-krzysztofgil5.alwaysdata.net";
 $username = "217145";
@@ -23,3 +29,5 @@ while($row=mysqli_fetch_assoc($result)) {
 }
 echo ("</table>");
 ?>
+</body>
+</html>
