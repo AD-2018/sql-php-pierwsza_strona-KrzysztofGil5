@@ -8,7 +8,7 @@
    <a href="funcAgregujace.php">funcAgregujace</a>
 </div>
 <?php
-echo("tu jestem: funcAgregujace.php");
+echo("Jestem w: funcAgregujace.php");
 ?>
 </body>
 </html>
