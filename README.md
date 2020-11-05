@@ -1,1 +1,1 @@
-# https://php-sql-krzysztof.herokuapp.com/
+# https://krzysztof-php.herokuapp.com/
