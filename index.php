@@ -5,15 +5,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
-  <div class="nav">
-    <a href="index.php">orgPracownicy</a>
-    <a href="funcAgregujace.php">funcAgregujace</a>
-</div>
+    <h1>Krzysztof Gil nr 5</h1>
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
+        <div class="nav">
+        <a href="index.php">Pracownicy i Organizacja</a>
+        <a href="funcAgregujace.php">Funkcje Agregujące</a>
+        <a href="sortowanie.php">Sortowanie</a>
+        <a href="GroupBy.php">Group By</a>
+    </div>
 <?php
 require "connect.php";
-echo("Jestem w: orgPracownicy.php");
-echo("<br>Witaj świecie nazywam się Krzysztof Gil<br>");
+echo("Jestem w: Pracownicy i Organizacja");
 
 echo("<br><h3>Wszyscy pracownicy</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org";
