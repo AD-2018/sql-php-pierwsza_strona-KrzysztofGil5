@@ -46,7 +46,7 @@ echo ("</table>");
 
 echo("<br><h3>Pracownicy tylko z działu 2 i z działu 3</h3>");
 
-$sql = "SELECT * FROM pracownicy,organizacja WHERE (dzial=2 or dzial=3)";
+$sql = "SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)";
 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -68,7 +68,7 @@ echo ("</table>");
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 echo("<br><h3>Pracownicy tylko z zarobkami mniejszymi niż 30</h3>");
-$sql = "SELECT * FROM pracownicy,organizacja WHERE zarobki<30";
+$sql = "SELECT * FROM pracownicy WHERE zarobki<30";
 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
