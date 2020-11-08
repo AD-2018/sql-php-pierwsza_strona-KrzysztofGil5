@@ -48,7 +48,7 @@ echo ("</table>");
 
 echo("<br><h3>Trzy najlepiej zarabiające kobiety z działu 4 i 2</h3>");
 
-$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=2 or dzial=4) AND imie LIKE '%a' ORDER BY zarobki DESC";
+$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=2 or dzial=4) AND imie LIKE '%a' ORDER BY zarobki DESC LIMIT 3";
 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -70,7 +70,7 @@ echo ("</table>");
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 echo("<br><h3>Najstarszy pracownik</h3>");
-$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY data_urodzenia DESC LIMIT 1";
+$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY data_urodzenia ASC LIMIT 1";
 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
