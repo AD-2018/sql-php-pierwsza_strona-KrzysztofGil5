@@ -136,7 +136,7 @@ echo ("</table>");
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 echo("<br><h3>Mężczyźni posortowani rosnąco: po nazwie działu</h3>");
-$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=1 or dzial=3) AND imie LIKE '%a' ORDER BY nazwa_dzial ASC";
+$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie NOT LIKE '%a' ORDER BY nazwa_dzial ASC";
 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
