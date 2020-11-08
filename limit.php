@@ -21,7 +21,7 @@ require "connect.php";
 echo("Jestem w: Limit");
 
 echo("<br><h3>Dwóch najlepiej zarabiających pracowników z działu 4</h3>");
-$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY zarobki DESC LIMIT 2";
+$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND dzial=4 ORDER BY zarobki DESC LIMIT 2";
 
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
