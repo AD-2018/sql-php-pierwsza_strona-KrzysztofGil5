@@ -18,7 +18,7 @@
     </div>
 <?php
 require "connect.php";
-echo("Jestem w: Pracownicy i Organizacja");
+echo("Jestem w: Sortowanie");
 
 echo("<br><h3>Pracownicy posortowani malejąco wg imienia</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY imie DESC";
