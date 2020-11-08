@@ -13,6 +13,8 @@
         <a href="funcAgregujace.php">Funkcje Agregujące</a>
         <a href="sortowanie.php">Sortowanie</a>
         <a href="groupby.php">Group By</a>
+        <a href="limit.php">Limit</a>
+        <a href="having.php">Klauzula Having</a>
     </div>
 <?php
 require "connect.php";
