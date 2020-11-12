@@ -61,7 +61,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>Średnia zarobków</th><th>Nazwa Działu</th></tr>");
+echo("<tr><th>Średnia zarobków</th><th>Nazwa Działu</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['avg(zarobki)']."</td>"."<td>".$row['nazwa_dzial']."</td>");
@@ -88,7 +88,7 @@ echo("<table border=1>");
 echo("<tr><th>Ilość pracowników</th><th>Nazwa Działu</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['avg(zarobki)']."</td>"."<td>".$row['nazwa_dzial']."</td>");
+    echo("<td>".$row['count(id_pracownicy)']."</td>"."<td>".$row['nazwa_dzial']."</td>");
     echo("</tr>");
 }
 echo ("</table>");
