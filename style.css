@@ -15,17 +15,3 @@ height: 25px;
 }
 tr:hover {background-color: #ddd;}
 tr:nth-child(even){background-color: #f2f2f2;
-
-a {
-display: inline-block;
-width: auto;
-padding: 15px 35px;
-text-decoration: none;
-color: white;
-text-transform: uppercase;
-font-weight: 700;
-margin: 0 auto 20px;
--webkit-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
-background: #6D9BCA;
-}
