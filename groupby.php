@@ -39,7 +39,7 @@ echo("<table border=1>");
 echo("<tr><th>Suma zarobków</th><th>Nazwa działu</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['avg(zarobki)']."</td>"."<td>".$row['nazwa_dzial']."</td>");
+    echo("<td>".$row['sum(zarobki)']."</td>"."<td>".$row['nazwa_dzial']."</td>");
     echo("</tr>");
 }
 echo ("</table>");
@@ -59,7 +59,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>Ilość pracowników</th><th>Nazwa Działu</th></tr>");
+echo("<tr><th>Ilość pracowników</th><th>Nazwa Działu</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['count(id_pracownicy)']."</td>"."<td>".$row['nazwa_dzial']."</td>");
@@ -82,7 +82,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>Średnie zarobków</th><th>Imię</th><th>Nazwa Działu</th></tr>");
+echo("<tr><th>Średnie zarobków</th><th>Nazwa Działu</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['avg(zarobki)']."</td>"."<td>".$row['nazwa_dzial']."</td>");
@@ -105,7 +105,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>Suma zarobków</th><th>Imię</th><th>Płeć</th></tr>");
+echo("<tr><th>Suma zarobków</th><th>Płeć</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['sum(zarobki)']."</td>"."<td>".$row['plec']."</td>");
@@ -128,7 +128,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>Średnia zarobków</th><th>Imię</th><th>Płeć</th></tr>");
+echo("<tr><th>Średnia zarobków</th><th>Płeć</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['avg(zarobki)']."</td>"."<td>".$row['plec']."</td>");
