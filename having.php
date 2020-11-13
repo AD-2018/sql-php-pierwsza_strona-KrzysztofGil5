@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Krzysztof - Pracownicy i Organizacja</title>
+  <title>Krzysztof - Funkcje Agregujące</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
