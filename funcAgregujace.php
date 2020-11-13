@@ -15,6 +15,8 @@
         <a href="groupby.php">Group By</a>
         <a href="limit.php">Limit</a>
         <a href="having.php">Klauzula Having</a>
+        <a href="dataiczas.php">Data i czas</a>
+        <a href="formatowaniedat.php">Formatowanie dat</a>
     </div>
 <?php
 require "connect.php";
