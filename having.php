@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Krzysztof - Funkcje Agregujące</title>
+  <title>Krzysztof - Klauzula Having</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
