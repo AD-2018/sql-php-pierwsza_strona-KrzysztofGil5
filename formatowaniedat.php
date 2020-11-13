@@ -130,7 +130,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>Imię</th><th>Dni</th><th>Godziny</th><th>Minuty</th></tr>");
+echo("<tr><th>Imię</th><th>Dni</th><th>Godziny</th><th>Minuty</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['id_pracownicy']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['dni']."</td>"."<td>".$row['godziny']."</td>"."<td>".$row['minuty']."</td>");
