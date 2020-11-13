@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Krzysztof - Pracownicy i Organizacja</title>
+  <title>Krzysztof - Group by</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@ echo("Jestem w: Group by");
 
 echo("<br><h3>Suma zarobków w poszczególnych działach </h3>");
 $sql = "SELECT sum(zarobki),nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY nazwa_dzial";
-
+echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -49,7 +49,7 @@ echo ("</table>");
 echo("<br><h3>Ilość pracowników w poszczególnych działach</h3>");
 
 $sql = "SELECT count(id_pracownicy), nazwa_dzial FROM pracownicy,organizacja WHERE dzial=id_org GROUP BY nazwa_dzial";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -72,7 +72,7 @@ echo ("</table>");
 echo("<br><h3>Średnie zarobków w poszczególnych działach</h3>");
 
 $sql = "SELECT avg(zarobki), nazwa_dzial FROM pracownicy,organizacja WHERE dzial=id_org GROUP by nazwa_dzial";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -95,7 +95,7 @@ echo ("</table>");
 echo("<br><h3>Suma zarobków kobiet i mężczyzn</h3>");
 
 $sql = "SELECT sum(zarobki), if( (imie LIKE '%a'), 'Kobiety','Mężczyźni') as 'plec' FROM pracownicy GROUP BY plec";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -118,7 +118,7 @@ echo ("</table>");
 echo("<br><h3>Średnia zarobków kobiet i mężczyzn</h3>");
 
 $sql = "SELECT avg(zarobki), if( (imie LIKE '%a'), 'Kobiety','Mężczyźni') as 'plec' FROM pracownicy GROUP BY plec";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
