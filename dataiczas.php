@@ -45,6 +45,29 @@ while($row=mysqli_fetch_assoc($result)) {
     echo("</tr>");
 }
 echo ("</table>");
+  
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+echo("<br><h3>Wiek poszczególnych pracowników (w latach) z działu serwis</h3>");
+
+$sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial="serwis"";
+echo(".$sql");
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+echo("<table border=1>");
+echo("<tr><th>ID</th><th>Imię</th><th>Zarobki</th><th>Data Urodzenia</th><th>Wiek</th></tr>");
+while($row=mysqli_fetch_assoc($result)) {
+    echo("<tr>");
+    echo("<td>".$row['id_pracownicy']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['zarobki']."</td>"."<td>".$row['data_urodzenia']."</td>"."<td>".$row['wiek']."</td>");
+    echo("</tr>");
+}
+echo ("</table>");
 ?>
 </body>
 </html>
