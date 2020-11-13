@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Krzysztof - Pracownicy i Organizacja</title>
+  <title>Krzysztof - Sortowanie</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@ echo("Jestem w: Sortowanie");
 
 echo("<br><h3>Pracownicy posortowani malejąco wg imienia</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY imie DESC";
-
+echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -49,7 +49,7 @@ echo ("</table>");
 echo("<br><h3>Pracownicy z działu 3 posortowani rosnąco po imieniu</h3>");
 
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=3) ORDER BY imie ASC";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -71,7 +71,7 @@ echo ("</table>");
 
 echo("<br><h3>Kobiety posortowane rosnąco po imieniu </h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie LIKE '%a' ORDER BY imie ASC";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -93,7 +93,7 @@ echo ("</table>");
 
 echo("<br><h3>Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=1 or dzial=3) AND imie LIKE '%a' ORDER BY zarobki ASC";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -115,7 +115,7 @@ echo ("</table>");
 
 echo("<br><h3>Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=1 or dzial=3) AND imie LIKE '%a' ORDER BY zarobki ASC";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -137,7 +137,7 @@ echo ("</table>");
 
 echo("<br><h3>Mężczyźni posortowani rosnąco: po nazwie działu</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie NOT LIKE '%a' ORDER BY nazwa_dzial ASC";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -159,7 +159,7 @@ echo ("</table>");
 
 echo("<br><h3>Mężczyźni posortowani rosnąco: po wysokości zarobków</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie NOT LIKE '%a' ORDER BY zarobki ASC";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
