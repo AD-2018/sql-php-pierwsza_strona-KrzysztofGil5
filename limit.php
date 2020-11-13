@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Krzysztof - Pracownicy i Organizacja</title>
+  <title>Krzysztof - Limit</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@ echo("Jestem w: Limit");
 
 echo("<br><h3>Dwóch najlepiej zarabiających pracowników z działu 4</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND dzial=4 ORDER BY zarobki DESC LIMIT 2";
-
+echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -49,7 +49,7 @@ echo ("</table>");
 echo("<br><h3>Trzy najlepiej zarabiające kobiety z działu 4 i 2</h3>");
 
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=2 or dzial=4) AND imie LIKE '%a' ORDER BY zarobki DESC LIMIT 3";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -71,7 +71,7 @@ echo ("</table>");
 
 echo("<br><h3>Najstarszy pracownik</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY data_urodzenia ASC LIMIT 1";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
