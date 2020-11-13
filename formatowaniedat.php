@@ -23,7 +23,7 @@ require "connect.php";
 echo("Jestem w: Formatowanie dat");
 
 echo("<br><h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
-$sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as data from pracownicy";
+$sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') as data from pracownicy";
 echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
