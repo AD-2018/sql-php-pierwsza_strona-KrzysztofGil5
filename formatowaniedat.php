@@ -51,7 +51,7 @@ echo ("</table>");
 echo("<br><h3>Wypisz dzisiejszą nazwę dnia po polsku</h3>");
 
 $sql1 = "SET lc_time_names = 'pl_PL'";
-$sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W') as data";
+$sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W') as dzien";
 echo(".$sql");
 $result = mysqli_query($conn, $sql1, $sql2);
 if ( $result) {
@@ -65,7 +65,7 @@ echo("<table border=1>");
 echo("<tr><th>Dzisiejszy dzień</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['data']."</td>");
+    echo("<td>".$row['dzien']."</td>");
     echo("</tr>");
 }
 echo ("</table>");
