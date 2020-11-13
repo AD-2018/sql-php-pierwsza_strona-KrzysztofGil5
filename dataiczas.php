@@ -50,7 +50,7 @@ echo ("</table>");
 
 echo("<br><h3>Wiek poszczególnych pracowników (w latach) z działu serwis</h3>");
 
-$sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial="serwis"";
+$sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'";
 echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
