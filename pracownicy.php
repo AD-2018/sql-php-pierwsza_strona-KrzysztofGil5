@@ -22,7 +22,7 @@ echo("Jestem w: Pracownicy");
 
 echo("<br><h3>Pracownicy tylko z działu 2</h3>");
 $sql = "SELECT * FROM pracownicy WHERE dzial=2";
-
+echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -49,7 +49,7 @@ echo ("</table>");
 echo("<br><h3>Pracownicy tylko z działu 2 i z działu 3</h3>");
 
 $sql = "SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -71,7 +71,7 @@ echo ("</table>");
 
 echo("<br><h3>Pracownicy tylko z zarobkami mniejszymi niż 30</h3>");
 $sql = "SELECT * FROM pracownicy WHERE zarobki<30";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
