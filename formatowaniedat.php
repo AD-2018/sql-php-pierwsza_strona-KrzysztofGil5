@@ -133,7 +133,7 @@ echo("<table border=1>");
 echo("<tr><th>Imię</th><th>Dni</th><th>Godziny</th><th>Minuty</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['dni']."</td>"."<td>".$row['godziny']."</td>"."<td>".$row['minuty']."</td>");
+    echo("<td>".$row['imie']."</td>"."<td>".$row['dni']."</td>"."<td>".$row['godziny']."</td>"."<td>".$row['minuty']."</td>");
     echo("</tr>");
 }
 echo ("</table>");
