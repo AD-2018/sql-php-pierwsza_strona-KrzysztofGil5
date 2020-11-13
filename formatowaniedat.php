@@ -23,7 +23,7 @@ require "connect.php";
 echo("Jestem w: Formatowanie dat");
 
 echo("<br><h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
-$sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy";
+$sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as data from pracownicy";
 echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -41,7 +41,7 @@ echo("<table border=1>");
 echo("<tr><th>ID</th><th>Imię</th><th>Zarobki</th><th>Data Urodzenia</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['zarobki']."</td>"."<td>".$row['data_urodzenia']."</td>");
+    echo("<td>".$row['id_pracownicy']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['zarobki']."</td>"."<td>".$row['data']."</td>");
     echo("</tr>");
 }
 echo ("</table>");
