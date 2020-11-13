@@ -22,7 +22,7 @@ echo("Jestem w: Pracownicy i Organizacja");
 
 echo("<br><h3>Pracownicy z nazwą działów</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org";
-
+echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -49,7 +49,7 @@ echo ("</table>");
 echo("<br><h3>Pracownicy tylko z działu 1 i 4</h3>");
 
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND (dzial=1 or dzial=4)";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -71,7 +71,7 @@ echo ("</table>");
 
 echo("<br><h3>Lista kobiet z nazwami działów</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie LIKE '%a'";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
@@ -93,7 +93,7 @@ echo ("</table>");
 
 echo("<br><h3>Lista mężczyzn z nazwami działów</h3>");
 $sql = "SELECT * FROM pracownicy,organizacja WHERE dzial=id_org AND imie NOT LIKE '%a'";
-
+echo(".$sql");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     echo "<li>Ok";
