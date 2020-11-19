@@ -2,10 +2,7 @@
 echo("jestes w insert.php");
 echo $_POST['name'];
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+require "connect.php";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
