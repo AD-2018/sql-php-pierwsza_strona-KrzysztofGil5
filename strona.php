@@ -18,6 +18,7 @@
         <a href="dataiczas.php">Data i czas</a>
         <a href="formatowaniedat.php">Formatowanie dat</a>
         <a href="formularz.html">Formularz</a>
+	<a href="insert.php">Insert</a>
     </div>
 <?php
 	echo("jesteś na stronie.php");
