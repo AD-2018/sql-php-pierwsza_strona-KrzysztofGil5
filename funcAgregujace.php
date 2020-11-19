@@ -17,6 +17,7 @@
         <a href="having.php">Klauzula Having</a>
         <a href="dataiczas.php">Data i czas</a>
         <a href="formatowaniedat.php">Formatowanie dat</a>
+        <a href="formularz.html">Formularz</a>
     </div>
 <?php
 require "connect.php";
