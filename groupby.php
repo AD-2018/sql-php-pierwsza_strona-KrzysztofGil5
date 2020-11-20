@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Krzysztof - Group by</title>
+  <title>Krzysztof -  Group by</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
