@@ -19,7 +19,7 @@
         <a href="formatowaniedat.php">Formatowanie dat</a>
         <a href="formularz.html">Formularz</a>
         <a href="insert.php">Insert</a>
-        <a href="danedobazy.html>Dane do bazy</a>
+        <a href="danedobazy.php>Dane do bazy</a>
     </div>
 <?php
 require "connect.php";
