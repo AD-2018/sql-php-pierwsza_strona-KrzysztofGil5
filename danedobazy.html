@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dane do Bazy</title>
+</head>
+<body>
+	<form action="insert.php" method="POST">
+			Imię<br>
+			<input type="text" name="imie"><br>
+			Dział<br>
+			<input type="number" name="dzial"></br>
+			Zarobki<br>
+			<input type="number" name="zarobki"></br>
+			Data Urodzenia<br>
+			<input type="date" name="data_urodzenia"></br>
+			<input type="submit" value="dodaj pracownika">
+	</form>
+
+<form action="delete.php" method="POST">
+	ID<br>
+   <input type="number" name="id"></br>
+   <input type="submit" value="Zapisz w zmiennej $_POST['id']">
+</form>
+
+</body>
+</html>
