@@ -28,8 +28,8 @@ Usuwanie pracownika<br>
 require "connect.php";
 echo("Jestem w: Pracownicy");
 
-echo("<br><h3>Pracownicy tylko z działu 2</h3>");
-$sql = "SELECT * FROM pracownicy WHERE dzial=2";
+echo("<br><h3>Wszyscy Pracownicy</h3>");
+$sql = "SELECT * FROM pracownicy";
 
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -51,7 +51,6 @@ while($row=mysqli_fetch_assoc($result)) {
     echo("</tr>");
 }
 echo ("</table>");
-
 ?>
 </body>
 </html>
