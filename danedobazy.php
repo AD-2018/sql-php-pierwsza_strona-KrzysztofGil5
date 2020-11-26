@@ -30,7 +30,6 @@ Usuwanie pracownika<br>
 </form>
 <?php
 require "connect.php";
-echo("Jestem w: Pracownicy");
 
 echo("<br><h3>Wszyscy Pracownicy</h3>");
 $sql = "SELECT * FROM pracownicy";
