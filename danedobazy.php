@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Krzysztof - Dane do bazy</title>
+  <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Dane do Bazy</title>
@@ -18,6 +20,8 @@
 			<input type="date" name="data_urodzenia"></br>
 			<input type="submit" value="dodaj pracownika"><br>
 	</form>
+<br>
+<br>
 Usuwanie pracownika<br>
 <form action="delete.php" method="POST">
 	ID<br>
