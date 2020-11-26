@@ -1,6 +1,4 @@
 <?php
-echo('jestes w delete.php <br>');
-echo('<br>');
 echo $_POST['id_pracownicy'];
 
 require "connect.php";
