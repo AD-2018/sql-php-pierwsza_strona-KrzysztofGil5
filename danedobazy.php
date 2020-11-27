@@ -50,7 +50,17 @@ echo("<table border=1>");
 echo("<tr><th>ID</th><th>Imię</th><th>Zarobki</th><th>Data Urodzenia</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['zarobki']."</td>"."<td>".$row['data_urodzenia']."</td>");
+    echo("<td>".$row['id_pracownicy']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['zarobki']."</td>"."<td>".$row['data_urodzenia']."</td>"
+	 	     
+	     '<td>
+	    
+	     <form action="delete.php" method="POST">
+  		<input type="hidden" name="id" value="'.$row['id_pracownicy'].'"></br>
+   		<input type="submit" value="Usuń">
+	</form>
+	     
+	     </td>');
+	   
     echo("</tr>");
 }
 echo ("</table>");
