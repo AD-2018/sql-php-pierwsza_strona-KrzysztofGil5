@@ -8,7 +8,7 @@
     <h1>Krzysztof Gil nr 5</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
         <div class="nav">
-        <a href="index.html">Powrót</a>
+        <a href="index.php">Powrót</a>
     </div>
 <?php
 require "connect.php";
