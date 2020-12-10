@@ -20,6 +20,7 @@
         <a href="formularz.html">Formularz</a>
         <a href="insert.php">Insert</a>
         <a href="danedobazy.php">Dane do bazy</a>
+        <a href="biblioteka.php">Biblioteka</a>
     </div>
 <?php
 require "connect.php";
