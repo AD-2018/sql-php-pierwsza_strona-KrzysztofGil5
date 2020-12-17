@@ -1,44 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 a {
-background:transparent;
-border: 2px solid transparent;
-border-radius: 5px;
-box-sizing: border-box;
-cursor: pointer;
-font-size: 1rem;
-font-weight: 700;
-line-height: 1;
-margin: 5px;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display:inline-block;
-outline:none;
-position:relative;
-top:0;
-text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
--webkit-transition: all 0.2s ease-in-out 0s;
--moz-transition: all 0.2s ease-in-out 0s;
--ms-transition: all 0.2s ease-in-out 0s;
-transition: all 0.2s ease-in-out 0s;
-background:#34495e;
-color:#fff;
-box-shadow: 0 3px 0 #22303d;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 10px;
+  margin-bottom: 12px;
+  width: auto;
+  padding: 15px;
+  text-decoration: none;
+  display:flex;
+  outline:none;
+  position:relative;
+  top:0;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  background:#34495e;
+  color:#fff;
+  }
+
+a:hover {
+  transform: scale(1.2);
 }
 
 table, th, td {
-  text-align: center;
-  border: 1px solid black;
-}
+    text-align: center;
+    border: 1px solid black;
+  }
 table {
-  border-collapse: collapse;
-  width: 35%;
-}
+    border-collapse: collapse;
+    width: 35%;
+  }
 th {
-  background-color: #1E90FF;
-  height: 35px;
-}
+    background-color: #1E90FF;
+    height: 35px;
+  }
 td {
-height: 25px;
-}
+  height: 25px;
+  }
 tr:hover {background-color: #ddd;}
-tr:nth-child(even){background-color: #f2f2f2;
+tr:nth-child(even){background-color: #f2f2f2;}
+
+div.banner {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+div.nav {
+    margin-top: -2%;
+    position: absolute;
+    width: 10%;
+    height: 15px;
+  }
+
+div.tabele {
+  margin-top: -1.5%;
+  margin-left: 12%;
+  }
