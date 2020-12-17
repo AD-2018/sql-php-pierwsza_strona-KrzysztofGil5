@@ -55,7 +55,7 @@ else {
 
 $sql = "SELECT * FROM biblTytul";
     $result = mysqli_query($conn, $sql);
-echo('<select name="Tytuł">');
+echo('<br><select name="Tytuł">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo'<option value="'.$row['id_tytul'].'">';
