@@ -67,7 +67,7 @@ echo('</select>');
 //---------------------------------------------------------------------------
 
 echo("<br><h3>Wszystkie ID</h3>");
-$sql = "SELECT * FROM biblAutor_biblTytul";
+$sql = "SELECT * FROM biblAutor_biblTytul,biblTytul,biblAutor where id_tytul=biblTytul_id AND id_autor=biblAutor_id order by id";
 echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -82,10 +82,10 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>biblAutor_id</th><th>biblTytul_id</th></tr>");
+echo("<th>ID</th><th>Autor</th><th>Tytuł</th>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id']."</td>"."<td>".$row['biblAutor_id']."</td>"."<td>".$row['biblTytul_id']."</td>");
+    echo("<td>".$row['id']."</td>"."<td>".$row['autor']."</td>"."<td>".$row['tytul']."</td>");
     echo("</tr>");
 }
 echo ("</table>");
