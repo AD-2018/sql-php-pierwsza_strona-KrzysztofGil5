@@ -27,14 +27,14 @@ else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-echo("<table border=1>");
-echo("<tr><th>ID</th><th>Autor</th></tr>");
-while($row=mysqli_fetch_assoc($result)) {
-    echo("<tr>");
-    echo("<td>".$row['id']."</td>"."<td>".$row['autor']."</td>");
-    echo("</tr>");
-}
-echo ("</table>");
+echo('<select name="Autor">');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo'<option value="'.$row['id_autor'].'">';
+        echo($row['autor']);
+        echo"</option>";
+    }
+echo('</select>');
 
 //---------------------------------------------------------------------------
 
@@ -53,14 +53,17 @@ else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-echo("<table border=1>");
-echo("<tr><th>ID</th><th>Tytuł</th></tr>");
-while($row=mysqli_fetch_assoc($result)) {
-    echo("<tr>");
-    echo("<td>".$row['id']."</td>"."<td>".$row['tytul']."</td>");
-    echo("</tr>");
-}
-echo ("</table>");
+echo("<h3>Tytuły</h3>");
+$sql = "SELECT * FROM biblTytuł";
+    $result = mysqli_query($conn, $sql);
+echo('<select name="Tytuł">');
+
+    while($row=mysqli_fetch_assoc($result)){
+        echo'<option value="'.$row['id_tytuł'].'">';
+        echo($row['tytuł']);
+        echo"</option>";
+    }
+echo('</select>');
 
 //---------------------------------------------------------------------------
 
