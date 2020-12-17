@@ -53,7 +53,6 @@ else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-echo("<br><h3>Tytuły</h3>");
 $sql = "SELECT * FROM biblTytul";
     $result = mysqli_query($conn, $sql);
 echo('<select name="Tytuł">');
