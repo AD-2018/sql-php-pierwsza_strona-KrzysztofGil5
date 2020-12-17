@@ -53,14 +53,14 @@ else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-echo("<h3>Tytuły</h3>");
-$sql = "SELECT * FROM biblTytuł";
+echo("<br><h3>Tytuły</h3>");
+$sql = "SELECT * FROM biblTytul";
     $result = mysqli_query($conn, $sql);
 echo('<select name="Tytuł">');
 
     while($row=mysqli_fetch_assoc($result)){
-        echo'<option value="'.$row['id_tytuł'].'">';
-        echo($row['tytuł']);
+        echo'<option value="'.$row['id_tytul'].'">';
+        echo($row['tytul']);
         echo"</option>";
     }
 echo('</select>');
