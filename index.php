@@ -9,7 +9,7 @@
     <h1>Krzysztof Gil nr 5</h1>
     </div>
     <div class="nav">
-        <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
+        <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a>
         <a href="pracownicy.php">Pracownicy</a>
         <a href="index.php">Pracownicy i Organizacja</a>
         <a href="funcAgregujace.php">Funkcje Agregujące</a>
