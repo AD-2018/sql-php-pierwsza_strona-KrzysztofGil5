@@ -5,9 +5,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="banner">
     <h1>Krzysztof Gil nr 5</h1>
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
-        <div class="nav">
+    </div>
+    <div class="nav">
+        <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
         <a href="pracownicy.php">Pracownicy</a>
         <a href="index.php">Pracownicy i Organizacja</a>
         <a href="funcAgregujace.php">Funkcje Agregujące</a>
@@ -22,6 +24,7 @@
         <a href="danedobazy.php">Dane do bazy</a>
         <a href="biblioteka.php">Biblioteka</a>
     </div>
+<div class="tabele">
 <?php
 require "connect.php";
 echo("Jestem w: Pracownicy i Organizacja");
@@ -117,5 +120,6 @@ while($row=mysqli_fetch_assoc($result)) {
 }
 echo ("</table>");
 ?>
+  </div>
 </body>
 </html>
