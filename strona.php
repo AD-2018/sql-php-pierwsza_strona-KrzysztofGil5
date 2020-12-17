@@ -5,11 +5,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="banner">
     <h1>Krzysztof Gil nr 5</h1>
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a><br>
+	</div>
         <div class="nav">
         <a href="index.php">Powrót</a>
     </div>
+<div class="tabele">
 <?php
 	echo("jesteś na stronie.php");
 
@@ -19,5 +21,6 @@
 
 	echo("<ul>");
 ?>
+</div>
 </body>
 </html>
