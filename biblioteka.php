@@ -27,7 +27,7 @@ else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-echo('<select name="Autor">');
+echo('<br><select name="Autor">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo'<option value="'.$row['id_autor'].'">';
