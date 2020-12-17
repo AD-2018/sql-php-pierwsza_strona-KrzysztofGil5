@@ -26,7 +26,7 @@ if ( $result) {
 else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-
+echo ('<br>');
 echo('<br><select name="Autor">');
 
     while($row=mysqli_fetch_assoc($result)){
