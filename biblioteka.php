@@ -14,7 +14,7 @@ require "connect.php";
 echo("Jestem w: biblioteka.php");
 echo("<br><h3>Wszyscy autorzy</h3>");
 $sql = "SELECT * FROM biblAutor";
-echo(".$sql");
+echo("$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -40,7 +40,7 @@ echo('</select>');
 
 echo("<br><h3>Wszystkie tytuły </h3>");
 $sql = "SELECT * FROM biblTytul";
-echo(".$sql");
+echo("$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -67,8 +67,8 @@ echo('</select>');
 //---------------------------------------------------------------------------
 
 echo("<br><h3>Wszystkie ID</h3>");
-$sql = "SELECT * FROM biblAutor_biblTytul,biblTytul,biblAutor where id_tytul=biblTytul_id AND id_autor=biblAutor_id order by id";
-echo(".$sql");
+$sql = "SELECT * FROM biblAutor_biblTytul,biblTytul,biblAutor WHERE id_tytul=biblTytul_id AND id_autor=biblAutor_id ORDER BY id";
+echo("$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
