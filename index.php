@@ -11,7 +11,6 @@
     <div class="nav">
         <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a>
         <a href="pracownicy/pracownicy.php">Pracownicy</a>
-        <a href="index.php">Pracownicy i Organizacja</a>
         <a href="pracownicy/funcAgregujace.php">Funkcje Agregujące</a>
         <a href="pracownicy/sortowanie.php">Sortowanie</a>
         <a href="pracownicy/groupby.php">Group By</a>
