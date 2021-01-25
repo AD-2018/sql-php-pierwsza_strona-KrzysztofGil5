@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-require "connect.php";
+require "pracownicy/connect.php";
 
 echo("Jestem w: biblioteka.php");
 echo("<br><h3>Wszyscy autorzy</h3>");
