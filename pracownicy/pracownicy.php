@@ -9,7 +9,7 @@
     <h1>Krzysztof Gil nr 5</h1>
   </div>
         <div class="nav">
-        <a href="index.php">Powrót</a>
+        <a href="https://krzysztof-php.herokuapp.com/">Powrót</a>
     </div>
 <div class="tabele">
 <?php

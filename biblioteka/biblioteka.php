@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>Krzysztof - Biblioteka</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://krzysztof-php.herokuapp.com/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Biblioteka</title>
 </head>
 <body>
+<h1>Krzysztof Gil nr 5</h1>
+  </div>
+        <div class="nav">
+        <a href="https://krzysztof-php.herokuapp.com/">Powrót</a>
+    </div>
 <?php
 require "connect.php";
 
