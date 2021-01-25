@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-require "https://krzysztof-php.herokuapp.com/pracownicy/connect.php";
+require "connect.php";
 
 echo("Jestem w: biblioteka.php");
 echo("<br><h3>Wszyscy autorzy</h3>");
