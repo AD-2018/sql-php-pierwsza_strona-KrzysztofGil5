@@ -13,7 +13,7 @@
     </div>
   <div class="tabele">
 <?php
-require "https://krzysztof-php.herokuapp.com/connect.php";
+require "connect.php";
 echo("Jestem w: Funkcje Agregujące");
 
 echo("<br><h3>Suma zarobków wszystkich pracowników</h3>");

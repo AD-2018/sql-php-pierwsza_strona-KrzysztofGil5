@@ -13,7 +13,7 @@
     </div>
 <div class="tabele">
 <?php
-require "https://krzysztof-php.herokuapp.com/connect.php";
+require "connect.php";
 echo("Jestem w: Formatowanie dat");
 
 echo("<br><h3>Wyświetl nazwy dni w dacie urodzenia</h3>");

@@ -13,7 +13,7 @@
     </div>
  <div class="tabele">
 <?php
-require "https://krzysztof-php.herokuapp.com/connect.php";
+require "connect.php";
 echo("Jestem w: Klauzula Having");
 
 echo("<br><h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");

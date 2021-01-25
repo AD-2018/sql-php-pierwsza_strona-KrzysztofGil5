@@ -25,7 +25,7 @@
     </div>
 <div class="tabele">
 <?php
-require "connect.php";
+require "pracownicy/connect.php";
 echo("Jestem w: Pracownicy i Organizacja");
 
 echo("<br><h3>Pracownicy z nazwą działów</h3>");
