@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Krzysztof - Limit</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://krzysztof-php.herokuapp.com/style.css">
 </head>
 <body>
   <div class="banner">
@@ -13,7 +13,7 @@
     </div>
   <div class="tabele">
 <?php
-require "connect.php";
+require "https://krzysztof-php.herokuapp.com/connect.php";
 echo("Jestem w: Limit");
 
 echo("<br><h3>Dwóch najlepiej zarabiających pracowników z działu 4</h3>");

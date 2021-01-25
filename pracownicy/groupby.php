@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Krzysztof -  Group by</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://krzysztof-php.herokuapp.com/style.css">
 </head>
 <body>
   <div class="banner">
@@ -13,7 +13,7 @@
     </div>
   <div class="tabele">
 <?php
-require "connect.php";
+require "https://krzysztof-php.herokuapp.com/connect.php";
 echo("Jestem w: Group by");
 
 echo("<br><h3>Suma zarobków w poszczególnych działach </h3>");

@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Krzysztof - Formatowanie dat</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://krzysztof-php.herokuapp.com/style.css">
 </head>
 <body>
   <div class="banner">
@@ -13,7 +13,7 @@
     </div>
 <div class="tabele">
 <?php
-require "connect.php";
+require "https://krzysztof-php.herokuapp.com/connect.php";
 echo("Jestem w: Formatowanie dat");
 
 echo("<br><h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
