@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Krzysztof - Data i czas</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="banner">
