@@ -8,7 +8,7 @@
   <title>Biblioteka</title>
 </head>
 <body>
-<h1>Krzysztof Gil nr 5</h1>
+<h1>Krzysztof Gil nr 5</h1><br>
   </div>
         <div class="nav">
         <a href="https://krzysztof-php.herokuapp.com/">Powrót</a>
