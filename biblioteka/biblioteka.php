@@ -13,6 +13,7 @@
         <div class="nav">
         <a href="https://krzysztof-php.herokuapp.com/">Powrót</a>
     </div>
+<div class="tabele">
 <?php
 require "connect.php";
 
@@ -95,5 +96,6 @@ while($row=mysqli_fetch_assoc($result)) {
 }
 echo ("</table>");
 ?>
+</div>
 </body>
 </html>
