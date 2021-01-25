@@ -10,15 +10,15 @@
     </div>
     <div class="nav">
         <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KrzysztofGil5">Github</a>
-        <a href="pracownicy.php">Pracownicy</a>
+        <a href="pracownicy/pracownicy.php">Pracownicy</a>
         <a href="index.php">Pracownicy i Organizacja</a>
-        <a href="funcAgregujace.php">Funkcje Agregujące</a>
-        <a href="sortowanie.php">Sortowanie</a>
-        <a href="groupby.php">Group By</a>
-        <a href="limit.php">Limit</a>
-        <a href="having.php">Klauzula Having</a>
-        <a href="dataiczas.php">Data i czas</a>
-        <a href="formatowaniedat.php">Formatowanie dat</a>
+        <a href="pracownicy/funcAgregujace.php">Funkcje Agregujące</a>
+        <a href="pracownicy/sortowanie.php">Sortowanie</a>
+        <a href="pracownicy/groupby.php">Group By</a>
+        <a href="pracownicy/limit.php">Limit</a>
+        <a href="pracownicy/having.php">Klauzula Having</a>
+        <a href="pracownicy/dataiczas.php">Data i czas</a>
+        <a href="pracownicy/formatowaniedat.php">Formatowanie dat</a>
         <a href="formularz.html">Formularz</a>
         <a href="insert.php">Insert</a>
         <a href="danedobazy.php">Dane do bazy</a>
