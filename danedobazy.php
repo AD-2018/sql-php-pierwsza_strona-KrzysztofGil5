@@ -29,7 +29,7 @@ Usuwanie pracownika<br>
    <input type="submit" value="Zapisz w zmiennej $_POST['id_pracownicy']">
 </form>
 <?php
-require "connect.php";
+require "pracownicy/connect.php";
 
 echo("<br><h3>Wszyscy Pracownicy</h3>");
 $sql = "SELECT * FROM pracownicy";
@@ -40,7 +40,7 @@ echo ("<li>".$sql);
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-  
+
 
 echo('<table border="1">');
 echo('<th>Id</th><th>Imie</th><th>zarobki</th><th>dzial</th><th>Data urodzenia</th>');

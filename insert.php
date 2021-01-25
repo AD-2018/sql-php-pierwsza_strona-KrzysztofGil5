@@ -1,7 +1,7 @@
 <?php
 echo("jestes w insert.php <br>");
 
-require "connect.php";
+require "pracownicy/connect.php";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
