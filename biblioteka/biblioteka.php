@@ -98,7 +98,7 @@ echo('</select>');
 //---------------------------------------------------------------------------
 
 echo("<br><h3>Wszyscy Autorzy</h3>");
-$sql = "SELECT * FROM biblAutor ORDER BY id";
+$sql = "SELECT * FROM biblAutor";
 echo("$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -124,7 +124,7 @@ echo ("</table>");
 //---------------------------------------------------------------------------
 	
 echo("<br><h3>Wszystkie Tytuły</h3>");
-$sql = "SELECT * FROM biblTytul ORDER BY id";
+$sql = "SELECT * FROM biblTytul";
 echo("$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
