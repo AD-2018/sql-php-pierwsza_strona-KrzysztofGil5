@@ -1,7 +1,7 @@
 <?php
 echo "<li>".$_POST['tytul'];
 
-require_once("https://krzysztof-php.herokuapp.com/pracownicy/connect.php");
+require("connect.php");
 
 $sql = "INSERT INTO biblTytul (id_tytul, tytul) 
        VALUES (null, '".$_POST['tytul']."')";
