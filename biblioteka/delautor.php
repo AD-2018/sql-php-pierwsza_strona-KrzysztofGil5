@@ -3,7 +3,7 @@ echo $_POST['id'];
 
 require_once("https://krzysztof-php.herokuapp.com/pracownicy/connect.php");
 
-$sql = "DELETE FROM bibl_autor WHERE id_autor=".$_POST['id'];
+$sql = "DELETE FROM biblAutor WHERE id_autor=".$_POST['id'];
 
 echo $sql;
 
