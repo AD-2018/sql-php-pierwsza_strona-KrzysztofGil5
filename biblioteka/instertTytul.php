@@ -3,7 +3,7 @@ echo "<li>".$_POST['tytul'];
 
 require_once("https://krzysztof-php.herokuapp.com/pracownicy/connect.php");
 
-$sql = "INSERT INTO bibl_tytul (id_tytul, tytul) 
+$sql = "INSERT INTO biblTytul (id_tytul, tytul) 
        VALUES (null, '".$_POST['tytul']."')";
 
 if ($conn->query($sql) === TRUE) {
