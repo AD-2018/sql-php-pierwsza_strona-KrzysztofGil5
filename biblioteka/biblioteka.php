@@ -142,7 +142,7 @@ echo("<table border=1>");
 echo("<th>ID</th><th>Tytuł</th>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id_autor']."</td>"."<td>".$row['tytul']."</td>");
+    echo("<td>".$row['id_tytul']."</td>"."<td>".$row['tytul']."</td>");
     echo("</tr>");
 }
 echo ("</table>");
