@@ -29,13 +29,13 @@
   <h3>Dodawanie Tytułu</h3>
 	<form action="insertTytul.php" method="POST">
 		<label>Tytuł: </label><input type="text" name="tytul"></br>
-		<input type="submit" value="Dodaj Tytul">
+		<input type="submit" value="Dodaj Tytuł">
 	</form>
 
   <h3>Usuwanie Tytułu [ID]</h3>
-<form action="/ksiazki/deltytul.php" method="POST">
+<form action="deltytul.php" method="POST">
     <input type="number" name="id"></br>
-     <input type="submit" value="Usuń Tytul">
+     <input type="submit" value="Usuń Tytuł">
 </form>	
 
 <?php
