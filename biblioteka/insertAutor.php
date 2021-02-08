@@ -4,7 +4,7 @@ echo "<li>".$_POST['autor'];
 
 require_once("https://krzysztof-php.herokuapp.com/pracownicy/connect.php");
 
-$sql = "INSERT INTO bibl_autor (id_autor, autor) 
+$sql = "INSERT INTO biblAutor (id_autor, autor) 
        VALUES (null, '".$_POST['autor']."')";
 
 if ($conn->query($sql) === TRUE) {
