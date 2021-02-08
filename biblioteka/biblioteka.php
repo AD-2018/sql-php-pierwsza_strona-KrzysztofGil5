@@ -14,25 +14,25 @@
         <a href="https://krzysztof-php.herokuapp.com/">Powrót</a>
     </div>
 <div class="tabele">
-<h2>Dodawanie Autora</h2>
+<h4>Dodawanie Autora</h4>
 	<form action="insertAutor.php" method="POST">
 		<label>Autor: </label><input type="text" name="autor"></br>
 		<input type="submit" value="Dodaj Autora">
 	</form>
 
-  <h3>Usuwanie Autora [ID]</h3>
+  <h4>Usuwanie Autora [ID]</h4>
 	<form action="delautor.php" method="POST">
   		<input type="number" name="id"></br>
    		<input type="submit" value="Usuń Autora">
 	</form>
   
-  <h3>Dodawanie Tytułu</h3>
+  <h4>Dodawanie Tytułu</h4>
 	<form action="insertTytul.php" method="POST">
 		<label>Tytuł: </label><input type="text" name="tytul"></br>
 		<input type="submit" value="Dodaj Tytuł">
 	</form>
 
-  <h3>Usuwanie Tytułu [ID]</h3>
+  <h4>Usuwanie Tytułu [ID]</h4>
 <form action="deltytul.php" method="POST">
     <input type="number" name="id"></br>
      <input type="submit" value="Usuń Tytuł">
