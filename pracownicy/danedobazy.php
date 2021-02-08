@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Krzysztof - Dane do bazy</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://krzysztof-php.herokuapp.com/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Dane do Bazy</title>
