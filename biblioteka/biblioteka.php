@@ -13,6 +13,31 @@
         <div class="nav">
         <a href="https://krzysztof-php.herokuapp.com/">Powrót</a>
     </div>
+  
+    <h2>Dodawanie Autora</h2>
+	<form action="/ksiazki/insertAutor.php" method="POST">
+		<label>Autor</label><input type="text" name="autor"></br>
+		<input type="submit" value="Dodaj Autora">
+	</form>
+
+  <h3>Usuwanie Autora</h3>
+	<form action="/ksiazki/delautor.php" method="POST">
+  		<input type="number" name="id"></br>
+   		<input type="submit" value="Usuń Autora">
+	</form>
+  
+  <h3>Dodawanie Tytułu</h3>
+	<form action="/ksiazki/insertTytul.php" method="POST">
+		<label>Tytul</label><input type="text" name="tytul"></br>
+		<input type="submit" value="Dodaj Tytul">
+	</form>
+
+  <h3>Usuwanie Tytułu</h3>
+<form action="/ksiazki/deltytul.php" method="POST">
+    <input type="number" name="id"></br>
+     <input type="submit" value="Usuń Tytul">
+</form>
+  
 <div class="tabele">
 <?php
 require "connect.php";
