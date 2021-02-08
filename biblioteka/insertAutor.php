@@ -9,7 +9,7 @@ $sql = "INSERT INTO bibl_autor (id_autor, autor)
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
-  header('Location: https://stanikjoanna.herokuapp.com/ksiazki/ksiazki.php');
+  header('Location: https://krzysztof-php.herokuapp.com/biblioteka/biblioteka.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
