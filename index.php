@@ -22,6 +22,7 @@
         <a href="insert.php">Insert</a>
         <a href="danedobazy.php">Dane do bazy</a>
         <a href="biblioteka/biblioteka.php">Biblioteka</a>
+        <a href="flexbox/index.html">Flexbox</a>
     </div>
 <div class="tabele">
 <?php
