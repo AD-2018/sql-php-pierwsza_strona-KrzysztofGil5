@@ -18,9 +18,7 @@
         <a href="pracownicy/having.php">Klauzula Having</a>
         <a href="pracownicy/dataiczas.php">Data i czas</a>
         <a href="pracownicy/formatowaniedat.php">Formatowanie dat</a>
-        <a href="formularz.html">Formularz</a>
-        <a href="insert.php">Insert</a>
-        <a href="danedobazy.php">Dane do bazy</a>
+        <a href="pracownicy/danedobazy.php">Dane do bazy</a>
         <a href="biblioteka/biblioteka.php">Biblioteka</a>
         <a href="flexbox/index.html">Flexbox</a>
     </div>
