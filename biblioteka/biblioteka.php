@@ -96,7 +96,7 @@ echo('</select>');
 
 //---------------------------------------------------------------------------
 
-echo("<br><h3>Wszyscy Autorzy</h3>");
+echo("<br><h3>Wszyscy Autorzy - Tabela</h3>");
 $sql = "SELECT * FROM biblAutor";
 echo("$sql");
 if ($conn->connect_error) {
@@ -122,7 +122,7 @@ echo ("</table>");
 
 //---------------------------------------------------------------------------
 	
-echo("<br><h3>Wszystkie Tytuły</h3>");
+echo("<br><h3>Wszystkie Tytuły - Tabela</h3>");
 $sql = "SELECT * FROM biblTytul";
 echo("$sql");
 if ($conn->connect_error) {
