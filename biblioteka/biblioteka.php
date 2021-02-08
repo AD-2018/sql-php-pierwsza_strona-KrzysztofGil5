@@ -16,7 +16,7 @@
 <div class="tabele">
 <h2>Dodawanie Autora</h2>
 	<form action="insertAutor.php" method="POST">
-		<label>Autor</label><input type="text" name="autor"></br>
+		<label>Autor: </label><input type="text" name="autor"></br>
 		<input type="submit" value="Dodaj Autora">
 	</form>
 
@@ -28,7 +28,7 @@
   
   <h3>Dodawanie Tytułu</h3>
 	<form action="insertTytul.php" method="POST">
-		<label>Tytul</label><input type="text" name="tytul"></br>
+		<label>Tytuł: </label><input type="text" name="tytul"></br>
 		<input type="submit" value="Dodaj Tytul">
 	</form>
 
