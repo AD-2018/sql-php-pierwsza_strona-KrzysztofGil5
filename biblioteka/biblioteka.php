@@ -13,8 +13,8 @@
         <div class="nav">
         <a href="https://krzysztof-php.herokuapp.com/">Powrót</a>
     </div>
-  
-    <h2>Dodawanie Autora</h2>
+<div class="tabele">
+<h2>Dodawanie Autora</h2>
 	<form action="insertAutor.php" method="POST">
 		<label>Autor</label><input type="text" name="autor"></br>
 		<input type="submit" value="Dodaj Autora">
@@ -36,9 +36,8 @@
 <form action="/ksiazki/deltytul.php" method="POST">
     <input type="number" name="id"></br>
      <input type="submit" value="Usuń Tytul">
-</form>
-  
-<div class="tabele">
+</form>	
+
 <?php
 require "connect.php";
 
