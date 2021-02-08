@@ -97,6 +97,58 @@ echo('</select>');
 
 //---------------------------------------------------------------------------
 
+echo("<br><h3>Wszyscy Autorzy</h3>");
+$sql = "SELECT * FROM biblAutor ORDER BY id";
+echo("$sql");
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+echo("<table border=1>");
+echo("<th>ID</th><th>Autor</th>");
+while($row=mysqli_fetch_assoc($result)) {
+    echo("<tr>");
+    echo("<td>".$row['id_autor']."</td>"."<td>".$row['autor']."</td>");
+    echo("</tr>");
+}
+echo ("</table>");
+
+//---------------------------------------------------------------------------
+	
+echo("<br><h3>Wszystkie Tytuły</h3>");
+$sql = "SELECT * FROM biblTytul ORDER BY id";
+echo("$sql");
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+echo("<table border=1>");
+echo("<th>ID</th><th>Tytuł</th>");
+while($row=mysqli_fetch_assoc($result)) {
+    echo("<tr>");
+    echo("<td>".$row['id_autor']."</td>"."<td>".$row['tytul']."</td>");
+    echo("</tr>");
+}
+echo ("</table>");
+
+//---------------------------------------------------------------------------
+
 echo("<br><h3>Wszystkie ID</h3>");
 $sql = "SELECT * FROM biblAutor_biblTytul,biblTytul,biblAutor WHERE id_tytul=biblTytul_id AND id_autor=biblAutor_id ORDER BY id";
 echo("$sql");
