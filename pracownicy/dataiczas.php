@@ -13,7 +13,7 @@
     </div>
  <div class="tabele">
 <?php
-require "connect.php";
+require "../connect.php";
 echo("Jestem w: Data i czas");
 
 echo("<br><h3>Wiek poszczególnych pracowników (w latach) </h3>");
