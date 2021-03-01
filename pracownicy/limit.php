@@ -13,7 +13,7 @@
     </div>
   <div class="tabele">
 <?php
-require "connect.php";
+require "../connect.php";
 echo("Jestem w: Limit");
 
 echo("<br><h3>Dwóch najlepiej zarabiających pracowników z działu 4</h3>");
