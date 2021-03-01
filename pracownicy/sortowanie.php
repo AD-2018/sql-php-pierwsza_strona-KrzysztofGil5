@@ -13,7 +13,7 @@
     </div>
  <div class="tabele">
 <?php
-require "connect.php";
+require "../connect.php";
 echo("Jestem w: Sortowanie");
 
 echo("<br><h3>Pracownicy posortowani malejąco wg imienia</h3>");
