@@ -29,7 +29,7 @@ Usuwanie pracownika<br>
    <input type="submit" value="Zapisz w zmiennej $_POST['id_pracownicy']">
 </form>
 <?php
-require "connect.php";
+require "../connect.php";
 
 echo("<br><h3>Wszyscy Pracownicy</h3>");
 $sql = "SELECT * FROM pracownicy";
