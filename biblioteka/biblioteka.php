@@ -39,7 +39,7 @@
 </form>	
 
 <?php
-require "connect.php";
+require "../connect.php";
 
 echo("Jestem w: biblioteka.php");
 echo("<br><h3>Wszyscy autorzy</h3>");
