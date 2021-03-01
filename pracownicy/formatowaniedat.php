@@ -13,7 +13,7 @@
     </div>
 <div class="tabele">
 <?php
-require "connect.php";
+require "../connect.php";
 echo("Jestem w: Formatowanie dat");
 
 echo("<br><h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
