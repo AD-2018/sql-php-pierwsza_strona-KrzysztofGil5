@@ -13,7 +13,7 @@
     </div>
 <div class="tabele">
 <?php
-require "connect.php";
+require "../connect.php";
 echo("Jestem w: Pracownicy");
 
 echo("<br><h3>Pracownicy tylko z działu 2</h3>");
