@@ -1,7 +1,7 @@
 <?php
 echo "<li>".$_POST['autor'];
 
-require("connect.php");
+require("../connect.php");
 
 $sql = "INSERT INTO biblAutor (id_autor, autor) 
        VALUES (null, '".$_POST['autor']."')";
