@@ -2,3 +2,27 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+
+}
+
+header {
+    background-color: red;
+}
+
+nav {
+    background-color: greenyellow;
+}
+
+main {
+    background-color: lightblue;
+}
+
+aside {
+    background-color: pink;
+}
+
+footer {
+    background-color: yellow;
+}
