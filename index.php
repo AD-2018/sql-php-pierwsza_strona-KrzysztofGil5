@@ -21,6 +21,7 @@
         <a href="pracownicy/danedobazy.php">Dane do bazy</a>
         <a href="biblioteka/biblioteka.php">Biblioteka</a>
         <a href="flexbox/index.html">Flexbox</a>
+        <a href="cssgrid/index.html">CSS Grid</a>
     </div>
 <div class="tabele">
 <?php
