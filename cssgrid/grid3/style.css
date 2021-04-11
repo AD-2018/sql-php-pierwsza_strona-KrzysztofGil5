@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    background-color: white;
+    padding: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "a b b"
+    "a c d"
+    "a e e";
+}
+header {
+    background-color:red;
+    grid-area: a;
+    height: 100vh;
+}
+nav {
+    background-color: greenyellow;
+    grid-area: b;
+    height: 33vh;
+}
+main {
+background-color: lightskyblue;
+grid-area: c;
+height: 33vh;
+}
+aside {
+    grid-area: e;
+    background-color: yellow;
+    height: 33vh;
+    width: 100%;
+}
+footer {
+background-color: orange;
+grid-area: d;
+height: 33vh;
+}
