@@ -4,7 +4,6 @@
 }
 .container {
     background-color: white;
-    padding: 0px;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -19,7 +18,7 @@ header {
     height: 100vh;
 }
 nav {
-    background-color: greenyellow;
+    background-color: green;
     grid-area: b;
     height: 33vh;
 }
