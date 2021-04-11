@@ -5,6 +5,7 @@
 
 .container {
     background-color: white;
+    padding: 0px;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
