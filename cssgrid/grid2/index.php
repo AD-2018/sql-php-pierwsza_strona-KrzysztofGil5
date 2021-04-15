@@ -71,9 +71,6 @@ echo ("</table>");
 ?>
       </main>
       <aside>
-        5
-        </aside>
-      <footer>
       <?php
 require "../../connect.php";
 
@@ -101,6 +98,9 @@ while($row=mysqli_fetch_assoc($result)) {
 }
 echo ("</table>");
 ?>
+        </aside>
+      <footer>
+      4
       </footer>
       <div class="yellow">
             6
