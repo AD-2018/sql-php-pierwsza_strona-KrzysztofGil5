@@ -75,7 +75,7 @@ echo ("</table>");
 require "../../connect.php";
 
 echo("<br><h3>Osoby z rolami</h3>");
-$sql = "SELECT pracownik, projekt FROM pracownik, projekt, idpp WHERE  pracownik.id = idpp.idpra AND projekt.id = idpp.idpro";
+$sql = "SELECT osoba, rola FROM osoba, rola, idor WHERE osoba.id = idor.idos AND rola.id = idor.idro";
 echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
