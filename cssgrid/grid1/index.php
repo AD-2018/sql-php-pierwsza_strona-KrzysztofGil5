@@ -47,10 +47,62 @@ echo ("</table>");
 3
 </main>
 <aside>
-5
+<?php
+require "../../connect.php";
+
+echo("<br><h3>Pracownicy i ich projekty</h3>");
+$sql = "SELECT pracownik, projekt FROM pracownik, projekt, idpp WHERE  pracownik.id = idpp.idpra AND projekt.id = idpp.idpro";
+echo(".$sql");
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+echo("<table border=1>");
+echo("<tr><th>Pracownik</th><th>Projekt</th></tr>");
+while($row=mysqli_fetch_assoc($result)) {
+    echo("<tr>");
+    echo("<td>".$row['pracownik']."</td>"."<td>".$row['projekt']."</td>");
+    echo("</tr>");
+}
+echo ("</table>");
+?>
 </aside>
 <footer>
-4
+<?php
+require "../../connect.php";
+
+echo("<br><h3>Projekty</h3>");
+$sql = "SELECT * FROM projekt";
+echo(".$sql");
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    echo "<li>Ok";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+echo("<table border=1>");
+echo("<tr><th>ID</th><th>Projekt</th></tr>");
+while($row=mysqli_fetch_assoc($result)) {
+    echo("<tr>");
+    echo("<td>".$row['id']."</td>"."<td>".$row['projekt']."</td>");
+    echo("</tr>");
+}
+echo ("</table>");
+?>
 </footer>
 </div>
 </body>
