@@ -3,7 +3,7 @@ echo "<li>".$_POST['id'];
 
 require_once("../../connect.php");
 
-$sql = "INSERT INTO idpa (id, idpr, idpar)
+$sql = "INSERT INTO idpa (id, idpr, idar)
        VALUES (null, '".$_POST['addproducent']."', '".$_POST['addartykul']."')";
 
 if ($conn->query($sql) === TRUE) {
