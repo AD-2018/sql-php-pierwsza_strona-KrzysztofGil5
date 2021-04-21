@@ -68,3 +68,7 @@ div.tabele {
   margin-top: -1.5%;
   margin-left: 12%;
   }
+
+li {
+  list-style-type: none;
+}
