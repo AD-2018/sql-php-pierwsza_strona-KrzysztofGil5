@@ -34,7 +34,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>Pracownik</th></tr>");
+echo("<tr><th>ID</th><th>Pracownik</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['id']."</td>"."<td>".$row['pracownik']."</td>".
@@ -76,10 +76,19 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>Pracownik</th><th>Projekt</th></tr>");
+echo("<tr><th>Pracownik</th><th>Projekt</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['pracownik']."</td>"."<td>".$row['projekt']."</td>");
+    echo("<td>".$row['pracownik']."</td>"."<td>".$row['projekt']."</td>".
+
+    '<td>
+
+    <form action="del_id.php" method="POST">
+     <input type="hidden" name="id" value="'.$row['id'].'"></br>
+      <input type="submit" value="Usuń">
+</form>
+
+    </td>');
     echo("</tr>");
 }
 echo ("</table>");
@@ -105,10 +114,19 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>Projekt</th></tr>");
+echo("<tr><th>ID</th><th>Projekt</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id']."</td>"."<td>".$row['projekt']."</td>");
+    echo("<td>".$row['id']."</td>"."<td>".$row['projekt']."</td>".
+
+    '<td>
+
+    <form action="del_prac.php" method="POST">
+     <input type="hidden" name="id" value="'.$row['id'].'"></br>
+      <input type="submit" value="Usuń">
+</form>
+
+    </td>'););
     echo("</tr>");
 }
 echo ("</table>");
