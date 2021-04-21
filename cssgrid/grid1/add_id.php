@@ -4,7 +4,7 @@ echo "<li>".$_POST['id'];
 require_once("../../connect.php");
 
 $sql = "INSERT INTO idpp (id, idpra, idpro)
-       VALUES (null, '".$_POST['pracownik']."', '".$_POST['projekt']."')";
+       VALUES (null, '".$_POST['addpracownik']."', '".$_POST['addprojekt']."')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";

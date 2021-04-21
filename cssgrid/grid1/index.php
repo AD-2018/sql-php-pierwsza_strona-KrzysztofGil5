@@ -24,8 +24,8 @@
 	</form></br>
   <h4>Dodawanie Wiele do wielu</h4>
 	<form action="add_id.php" method="POST">
-		<label>ID Pracownika: </label><input type="text" name="prac"></br>
-    <label>ID Projektu: </label><input type="text" name="proj"></br>
+		<label>ID Pracownika: </label><input type="text" name="addpracownik"></br>
+    <label>ID Projektu: </label><input type="text" name="addprojekt"></br>
 		<input type="submit" value="Dodaj">
 	</form>
 </header>
