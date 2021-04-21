@@ -91,10 +91,10 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>Pracownik</th><th>Projekt</th><th>Usuwanie</th></tr>");
+echo("<tr><th>ID</th><th>Pracownik</th><th>Projekt</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['pracownik']."</td>"."<td>".$row['projekt']."</td>".
+    echo("<td>".$row['id']."</td>"."<td>".$row['pracownik']."</td>"."<td>".$row['projekt']."</td>".
 
     '<td>
 
