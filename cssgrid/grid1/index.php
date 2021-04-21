@@ -126,7 +126,7 @@ while($row=mysqli_fetch_assoc($result)) {
       <input type="submit" value="Usuń">
 </form>
 
-    </td>'););
+    </td>');
     echo("</tr>");
 }
 echo ("</table>");
