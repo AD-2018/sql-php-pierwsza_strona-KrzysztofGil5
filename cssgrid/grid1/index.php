@@ -12,7 +12,22 @@
 
 <div class="container">
 <header>
-1
+<h4>Dodawanie Pracownika</h4>
+	<form action="add_prac.php" method="POST">
+		<label>Pracownik: </label><input type="text" name="pracownik"></br>
+		<input type="submit" value="Dodaj">
+	</form></br>
+  <h4>Dodawanie Projektu</h4>
+	<form action="add_projekt.php" method="POST">
+		<label>Projekt: </label><input type="text" name="projekt"></br>
+		<input type="submit" value="Dodaj">
+	</form></br>
+  <h4>Dodawanie Wiele do wielu</h4>
+	<form action="add_id.php" method="POST">
+		<label>ID Pracownika: </label><input type="text" name="prac"></br>
+    <label>ID Projektu: </label><input type="text" name="proj"></br>
+		<input type="submit" value="Dodaj">
+	</form>
 </header>
 <nav>
 <?php
