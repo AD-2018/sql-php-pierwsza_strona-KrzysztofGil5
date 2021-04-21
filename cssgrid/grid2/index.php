@@ -48,7 +48,6 @@ echo ("</table>");
 ?>
       </header>
       <nav>
-      <header>
 <h4>Dodawanie Osoby</h4>
 	<form action="add_osoba.php" method="POST">
 		<label>Osoba: </label><input type="text" name="osoba"></br>
