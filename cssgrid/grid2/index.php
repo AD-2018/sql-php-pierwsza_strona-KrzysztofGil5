@@ -123,7 +123,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><ID><th>Osoba</th><th>Rola</th><th>Usuwanie</th></tr>");
+echo("<tr><th>ID</th><th>Osoba</th><th>Rola</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['id']."</td>"."<td>".$row['osoba']."</td>"."<td>".$row['rola']."</td>".
