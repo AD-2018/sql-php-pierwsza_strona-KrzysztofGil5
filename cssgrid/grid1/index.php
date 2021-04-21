@@ -121,7 +121,7 @@ while($row=mysqli_fetch_assoc($result)) {
 
     '<td>
 
-    <form action="del_prac.php" method="POST">
+    <form action="del_projekt.php" method="POST">
      <input type="hidden" name="id" value="'.$row['id'].'"></br>
       <input type="submit" value="Usuń">
 </form>
