@@ -29,7 +29,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>osoba</th></tr>");
+echo("<tr><th>ID</th><th>osoba</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['id']."</td>"."<td>".$row['osoba']."</td>".
@@ -85,7 +85,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>rola</th></tr>");
+echo("<tr><th>ID</th><th>rola</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['id']."</td>"."<td>".$row['rola']."</td>".
@@ -123,7 +123,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><ID><th>Osoba</th><th>Rola</th></tr>");
+echo("<tr><ID><th>Osoba</th><th>Rola</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['id']."</td>"."<td>".$row['osoba']."</td>"."<td>".$row['rola']."</td>".
