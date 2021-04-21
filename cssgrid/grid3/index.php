@@ -14,7 +14,7 @@
 require "../../connect.php";
 
 echo("<br><h3>Prawnicy i ich sprawy</h3>");
-$sql = "SELECT prawnik, sprawa FROM prawnik, sprawa, idps WHERE prawnik.id = idps.idpr AND sprawa.id = idps.idsp";
+$sql = "SELECT idps.id, prawnik, sprawa FROM prawnik, sprawa, idps WHERE prawnik.id = idps.idpr AND sprawa.id = idps.idsp";
 echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -29,10 +29,19 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>Prawnik</th><th>Sprawa</th></tr>");
+echo("<tr><th>ID</th><th>Prawnik</th><th>Sprawa</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['prawnik']."</td>"."<td>".$row['sprawa']."</td>");
+    echo("<td>".$row['id']."</td>"."<td>".$row['prawnik']."</td>"."<td>".$row['sprawa']."</td>".
+
+    '<td>
+
+    <form action="del_id.php" method="POST">
+     <input type="hidden" name="id" value="'.$row['id'].'"></br>
+      <input type="submit" value="Usuń">
+</form>
+
+    </td>');
     echo("</tr>");
 }
 echo ("</table>");
@@ -58,17 +67,41 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>Prawnik</th></tr>");
+echo("<tr><th>ID</th><th>Prawnik</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id']."</td>"."<td>".$row['prawnik']."</td>");
+    echo("<td>".$row['id']."</td>"."<td>".$row['prawnik']."</td>".
+
+    '<td>
+
+    <form action="del_prawnik.php" method="POST">
+     <input type="hidden" name="id" value="'.$row['id'].'"></br>
+      <input type="submit" value="Usuń">
+</form>
+
+    </td>');
     echo("</tr>");
 }
 echo ("</table>");
 ?>
 </nav>
 <main>
-3
+<h4>Dodawanie Prawnika</h4>
+	<form action="add_prawnik.php" method="POST">
+		<label>Prawnik: </label><input type="text" name="prawnik"></br>
+		<input type="submit" value="Dodaj">
+	</form></br>
+  <h4>Dodawanie Sprawy</h4>
+	<form action="add_sprawa.php" method="POST">
+		<label>Sprawa: </label><input type="text" name="sprawa"></br>
+		<input type="submit" value="Dodaj">
+	</form></br>
+  <h4>Dodawanie Wiele do wielu</h4>
+	<form action="add_id.php" method="POST">
+		<label>ID Prawnika: </label><input type="text" name="addprawnik"></br>
+    <label>ID Sprawy: </label><input type="text" name="addsprawa"></br>
+		<input type="submit" value="Dodaj">
+	</form>
 </main>
 <aside>
 5
@@ -93,10 +126,19 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID</th><th>Sprawa</th></tr>");
+echo("<tr><th>ID</th><th>Sprawa</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
-    echo("<td>".$row['id']."</td>"."<td>".$row['sprawa']."</td>");
+    echo("<td>".$row['id']."</td>"."<td>".$row['sprawa']."</td>".
+
+    '<td>
+
+    <form action="del_sprawa.php" method="POST">
+     <input type="hidden" name="id" value="'.$row['id'].'"></br>
+      <input type="submit" value="Usuń">
+</form>
+
+    </td>');
     echo("</tr>");
 }
 echo ("</table>");
