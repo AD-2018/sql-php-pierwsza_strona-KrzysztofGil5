@@ -29,7 +29,7 @@ else {
 }
 
 echo("<table border=1>");
-echo("<tr><th>ID<th><th>Producent</th><th>Artykuł</th><th>Usuwanie</th></tr>");
+echo("<tr><th>ID</th><th>Producent</th><th>Artykuł</th><th>Usuwanie</th></tr>");
 while($row=mysqli_fetch_assoc($result)) {
     echo("<tr>");
     echo("<td>".$row['id']."</td>"."<td>".$row['producent']."</td>"."<td>".$row['artykul']."</td>".
