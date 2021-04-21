@@ -14,7 +14,7 @@
 require "../../connect.php";
 
 echo("<br><h3>Producenci i ich artykuły</h3>");
-$sql = "SELECT producent, artykul FROM producent, artykul, idpa WHERE producent.id = idpa.idpr AND artykul.id = idpa.idar";
+$sql = "SELECT idpa.id, producent, artykul FROM producent, artykul, idpa WHERE producent.id = idpa.idpr AND artykul.id = idpa.idar";
 echo(".$sql");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
